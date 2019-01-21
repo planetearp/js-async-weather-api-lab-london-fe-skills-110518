@@ -50,7 +50,7 @@ function fetchFiveDayForecast(city) {
 
 function displayFiveDayForecast(json) {
   //render five day forecast data to the DOM using provided IDs and json from API
-  document.querySelector('')
+  document.querySelector('aside').innerHtml = "";
     for (i = 0; i < json.list.length; i++) {
       const obj = json.list[i];
       const date = obj.dt_txt;

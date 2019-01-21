@@ -13,7 +13,7 @@ function convertTemp(temp) {
 
 function handleFormSubmit(event) {
   //handle submit event
-  const city = document.getElementById('city').value.toLowerCase().replace(/\s/g, "+");
+  const city = document.getElementById('city').value.replace(/\s/g, "+");
   console.log(city);
   fetchCurrentWeather(city);
   fetchFiveDayForecast(city);

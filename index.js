@@ -34,8 +34,8 @@ function displayCurrentWeather(json) {
   document.getElementById('high').innerText = `${convertTemp(json.main.temp_max).toFixed(2)}`;
   document.getElementById('humidity').innerText = `${json.main.humidity}%`;
   document.getElementById('cloudCover').innerText = `${json.clouds['all']}%`;
-  // document.getElementById('sunrise').innerText = `${json.sys.sunrise}`;
-  // document.getElementById('sunset').innerText = `${json.sys.sunset}`;
+  document.getElementById('sunrise').innerText = `${json.sys.sunrise}`;
+  document.getElementById('sunset').innerText = `${json.sys.sunset}`;
 }
 
 
